@@ -2,7 +2,6 @@
 <?php
 include_once("header.php");
 include_once("./assets/images/data.php");
-var_dump($_GET);
 ?>
 
 <div class="row">

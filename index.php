@@ -17,11 +17,10 @@ include_once("./assets/images/data.php");
                 <h5 class="card-title"> <?php echo $item['name'] ?> </h5>
                 <p class="card-text"> <?php echo substr($item['article'], 0, 25) ?> </p>
                 <!-- <a href="./single.php" class="btn btn-primary" target="_blank">Article</a> -->
-                <a href="./single.php?sport=<?php echo $key; ?>" class="btn btn-primary" target="_blank">Article</a>
+                <a href="./single.php?sport=<?php echo $key; ?>" class="btn btn-primary" target="_blank" onclick="comptage">Article</a>
             </div>
         </div>
     </div>
-
 
 <?php endforeach; ?>
 

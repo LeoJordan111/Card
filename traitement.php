@@ -1,12 +1,16 @@
 
 
 <?php
-var_dump( $_POST);
-    if ($_POST['name'] === '' || $_POST['email'] === '') :?>
-        alert("test")
-        <?php header("location:" . $_SERVER['HTTP_REFERER']); ?>
-    <?php endif; ?>
+    
+if($_POST['prenom'] === ""){
+    header("location:./contact.php?status=not_ok");
+}
 
-
-    <p>Votre prénom : <?php echo $_POST['name']; ?> </p>
-    <p>email : <?php echo $_POST['email']; ?> </p>
+        if (isset($_POST['prenom']) && isset($_POST['email'])) {
+            $prenom = $_POST['prenom']; 
+            $email = $_POST['email'];
+            echo "<p>" . $prenom . "<p>";
+            echo "<p>" . $email . "<p>";
+        }
+?>
+        
